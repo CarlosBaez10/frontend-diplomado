@@ -1,0 +1,65 @@
+aside.custom_toast {
+  position: fixed;
+  width: 400px;
+  padding: 16px;
+  border-radius: 4px;
+  right: 40px;
+  top: 20px;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 16px;
+  z-index: 9;
+}
+
+aside.custom_toast div.toast_icon {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+aside.custom_toast div.toast_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 8px;
+}
+
+aside.custom_toast div.toast_content * {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
+aside.custom_toast div.toast_content strong {
+  font-weight: 700;
+}
+
+aside.custom_toast.success {
+  background: var(--success-toast-color);
+}
+
+aside.custom_toast.success div.toast_icon {
+  background-image: url("../../../assets/icon/circle-success.svg");
+}
+
+aside.custom_toast.error {
+  background: var(--error-toast-color);
+}
+
+aside.custom_toast.error div.toast_icon {
+  background-image: url("../../../assets/icon/circle-error.svg");
+}
+
+aside.custom_toast.warning {
+  background: var(--warning-toast-color);
+}
+
+aside.custom_toast.warning div.toast_icon {
+  background-image: url("../../../assets/icon/circle-warning.svg");
+}
+
+aside.custom_toast.hidden {
+  display: none;
+}

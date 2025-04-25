@@ -1,0 +1,10 @@
+export * from "./routes.model";
+export * from "./auth.endpoints.model";
+export * from "./user.endpoints.model";
+// export * from "./device.endpoinst.model";
+// export * from "./tag.endpoints.model";
+// export * from "./role.endpoints.model";
+// export * from "./company.endpoints.model";
+// export * from "./registries.endpoint.model";
+// export * from "./attendance.endpoint.model";
+// export * from "./access.endpoints.model";

@@ -1,0 +1,22 @@
+.loading {
+  display: grid;
+  place-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+}
+
+.loader img {
+  width: 100%;
+  width: 100%;
+  object-fit: contain;
+}

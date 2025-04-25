@@ -1,0 +1,127 @@
+div.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.filter div {
+  display: flex;
+  column-gap: 10px;
+}
+
+div.filter div button {
+  width: 160px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  height: 30px;
+}
+
+div.filter > label {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  position: relative;
+}
+
+div.filter > label img {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+div.filter > label img.clean {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+div.filter > label input {
+  height: 30px;
+  padding: 8px 30px 8px 10px;
+  width: 320px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+div.filter button {
+  width: 200px;
+  height: 40px;
+}
+
+div.filter div.filter_actions {
+  display: flex;
+  align-items: center;
+}
+
+div.filter div.filter_actions label {
+  height: 30px;
+  line-height: 30px;
+  color: var(--white-color);
+  background: var(--primary-color);
+  border-radius: 4px;
+  text-align: center;
+  width: 160px;
+  text-align: center;
+  text-overflow: ellipsis;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+}
+
+div.filter div.filter_actions label ul {
+  background: var(--white-color);
+  border-radius: 4px;
+  border: 2px solid var(--background-color);
+  position: absolute;
+  left: 0;
+  width: 160px;
+  top: 40px;
+  padding: 12px;
+  flex-direction: column;
+  row-gap: 4px;
+  border-radius: 4px;
+  display: none;
+}
+
+div.filter div.filter_actions label ul li:hover {
+  background: var(--background-color);
+  cursor: pointer;
+}
+
+div.filter div.filter_actions label ul li a {
+  color: var(--text-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 14px;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  display: block;
+}
+
+div.filter div.filter_actions label input {
+  display: none;
+}
+
+div.filter div.filter_actions label input[type="checkbox"]:checked ~ ul {
+  display: flex;
+}

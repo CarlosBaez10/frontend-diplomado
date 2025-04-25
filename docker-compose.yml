@@ -1,0 +1,12 @@
+services:
+  client:
+    container_name: react-diplomado
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 3007:3007
+    volumes:
+      - ./src/src:/app/src
+      - /app/node_modules

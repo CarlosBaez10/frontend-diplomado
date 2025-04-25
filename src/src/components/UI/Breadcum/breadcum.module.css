@@ -1,0 +1,26 @@
+section.breadcrumb {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+section.breadcrumb img {
+  transform: rotate(-90deg);
+  height: 10px;
+  width: 10px;
+}
+
+section.breadcrumb a {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+section.breadcrumb p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
